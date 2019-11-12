@@ -5,6 +5,6 @@
 
 * **Boonjin123 - Tok Boon Jin**
 
-* **dotox - wei wei**
+* **dotoxx - wei wei**
 
 * **vernonljw - Lim Jun Wei, Vernon**
