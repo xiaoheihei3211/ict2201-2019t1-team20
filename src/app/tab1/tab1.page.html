@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Rewards <img src="/assets/steps.png" name="stepImg" alt="">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label id="pointBG">
+    <p id="pointDisplay"><ion-text id="currPoints">{{steps}}</ion-text> steps</p>
+
+
+  </ion-label>
+
+  <ion-list lines="none">
+
+    <ion-item>
+      <ion-label>
+        <h1>Hello,<ion-text id="uname"> {{userName}} :)</ion-text></h1>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="userTier" style="background:'{{userTier}}'"><h1>{{userTier}} Member</h1></ion-label>
+      </ion-item>
+      <ion-label id="pointBG">
+        <p id="alignLeh"><ion-text id="currPoints1">{{steps}}</ion-text> steps to next tier
+          <br>
+          <ion-button style="align:left" (click)="displayRedeemedReward()">Display Redeemed Rewards</ion-button>
+
+        </p>
+
+      </ion-label>
+      <ion-text style="font-size:20px; font-weight:bold; padding-left:8px;">Rewards</ion-text>
+      <br>
+      <ion-text style="font-size:15px; padding-left:8px;">Select from the options below</ion-text>
+  </ion-list>
+
+
+
+    <ion-card name="grabCard">
+      <img src="/assets/grab.jpg" alt="">
+      <ion-header>
+        <ion-card-header>
+        <ion-card-title>$5 Grab Discount Voucher</ion-card-title>
+        <ion-card-subtitle>
+          <ion-button size="small" class="bronzeReward" [(ngModel)]="rewardTierB" (click)="validateUserReward(rewardTierB, bronzeDeduct);">{{bronzeDeduct}} Steps</ion-button>
+        </ion-card-subtitle>
+        </ion-card-header>
+      </ion-header>
+    </ion-card>
+
+    <ion-title></ion-title>
+    <ion-title></ion-title>
+
+    <ion-card name="watsonsCard">
+      <img src="/assets/watsons-logo.png" alt="">
+      <ion-header>
+        <ion-card-header>
+        <ion-card-title>$10 Watsons Discount Voucher</ion-card-title>
+        <ion-card-subtitle><ion-button size="small" class="bronzeReward" [(ngModel)]="rewardTierS" (click)="validateUserReward(rewardTierS, silverDeduct)">{{silverDeduct}} Steps</ion-button></ion-card-subtitle>
+        </ion-card-header>
+      </ion-header>
+    </ion-card>
+
+    <ion-title></ion-title>
+    <ion-title></ion-title>
+
+    <ion-card name="spcaCard">
+      <img src="/assets/spca.jpg" alt="">
+      <ion-header>
+        <ion-card-header>
+        <ion-card-title>$15 Donation to SPCA</ion-card-title>
+        <ion-card-subtitle><ion-button size="small" class="bronzeReward" [(ngModel)]="rewardTierG" (click)="validateUserReward(rewardTierG, goldDeduct)">{{goldDeduct}} Steps</ion-button></ion-card-subtitle>
+        </ion-card-header>
+      </ion-header>
+    </ion-card>
+
+
+
+  </ion-content>
