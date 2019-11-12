@@ -1,3 +1,3 @@
 ## Authors
 
-* ** IGN- realname**
+* **IGN- realname**
