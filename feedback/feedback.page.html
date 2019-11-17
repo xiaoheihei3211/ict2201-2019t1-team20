@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="customForm">
+
+
+        <div align="center">
+          <h1>Safety</h1>
+        <ionic4-star-rating #rating
+            activeColor = "#ff0000"
+            defaultColor = "#aaaaaa"
+            readonly = "false"
+            fontSize ="40px"
+            (ratingChanged)="logRatingChange($event)"
+            formControlName="starRating" [(ngModel)]="safety">
+        </ionic4-star-rating>
+        </div>
+
+        <div align="center">
+          <h1>Speed</h1>
+        <ionic4-star-rating #rating2
+            activeColor = "#35B100"
+            defaultColor = "#aaaaaa"
+            readonly = "false"
+            fontSize ="40px"
+            (ratingChanged)="logRatingChange2($event)"
+            formControlName="starRating2" [(ngModel)]="speed">
+        </ionic4-star-rating>
+        </div>
+
+        <div align="center">
+          <h1>Enjoyment</h1>
+        <ionic4-star-rating #rating2
+            activeColor = "#3500F5"
+            defaultColor = "#aaaaaa"
+            readonly = "false"
+            fontSize ="40px"
+            (ratingChanged)="logRatingChange3($event)"
+            formControlName="starRating2" [(ngModel)]="enjoyment">
+        </ionic4-star-rating>
+        </div>
+
+    <ion-row>
+      <ion-col text-center>
+        <ion-button (click)="submitRating()" [disabled]="!safety || !speed || !enjoyment">
+          <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
+          &nbsp;Submit rating
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+      </form>
+
+
+
+
+</ion-content>
