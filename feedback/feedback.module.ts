@@ -7,7 +7,10 @@ import { IonicModule } from '@ionic/angular';
 
 import { FeedbackPage } from './feedback.page';
 
+//for star ratings gui
 import { StarRatingModule } from 'ionic4-star-rating';
+
+//form gui
 import { ReactiveFormsModule} from '@angular/forms';
 
 const routes: Routes = [
@@ -22,9 +25,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    RouterModule.forChild(routes),
     StarRatingModule, //import star rating module for feedback page
-    ReactiveFormsModule,
-    RouterModule.forChild(routes)
+    ReactiveFormsModule
   ],
   declarations: [FeedbackPage]
 })
