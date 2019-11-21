@@ -1,5 +1,5 @@
 ## Authors
-
+* **Legend
 * **IGN- realname**
 * **Xueraxy - Chua Wei Ye**
 
