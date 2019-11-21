@@ -8,7 +8,7 @@
 
 <ion-content>
   <ion-label id="pointBG">
-    <p id="pointDisplay"><ion-text id="currPoints">{{steps}}</ion-text> steps</p>
+    <p id="pointDisplay"><ion-text *ngFor="let item of reward" id="currPoints">{{item.steps}}</ion-text> steps</p>
 
 
   </ion-label>
@@ -17,14 +17,14 @@
 
     <ion-item>
       <ion-label>
-        <h1>Hello,<ion-text id="uname"> {{userName}} :)</ion-text></h1>
+        <h1>Hello,<ion-text *ngFor="let item of reward" id="uname"> {{item.uname}} :)</ion-text></h1>
       </ion-label>
     </ion-item>
     <ion-item>
-      <ion-label class="userTier" style="background:'{{userTier}}'"><h1>{{userTier}} Member</h1></ion-label>
+      <ion-label class="userTier" *ngFor="let item of reward" style="background:'{{userTier}}'"><h1>{{item.tier}} Member</h1></ion-label>
       </ion-item>
       <ion-label id="pointBG">
-        <p id="alignLeh"><ion-text id="currPoints1">{{steps}}</ion-text> steps to next tier
+        <p id="alignLeh"><ion-text *ngFor="let item of reward" id="currPoints1">{{item.steps}}</ion-text> steps to next tier
           <br>
           <ion-button style="align:left" (click)="displayRedeemedReward()">Display Redeemed Rewards</ion-button>
 
@@ -42,9 +42,12 @@
       <img src="/assets/grab.jpg" alt="">
       <ion-header>
         <ion-card-header>
-        <ion-card-title>$5 Grab Discount Voucher</ion-card-title>
+        <ion-card-title></ion-card-title>
+        <ion-card-subtitle *ngFor="let items of rewardList">{{items.grab}} </ion-card-subtitle>
         <ion-card-subtitle>
-          <ion-button size="small" class="bronzeReward" [(ngModel)]="rewardTierB" (click)="validateUserReward(rewardTierB, bronzeDeduct);">{{bronzeDeduct}} Steps</ion-button>
+          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1);">{{bronzeArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="silverReward" (click)="validateUserReward(2);">{{silverArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="goldreward" (click)="validateUserReward(3);">{{goldArray[4]}} Steps</ion-button>
         </ion-card-subtitle>
         </ion-card-header>
       </ion-header>
@@ -57,11 +60,17 @@
       <img src="/assets/watsons-logo.png" alt="">
       <ion-header>
         <ion-card-header>
-        <ion-card-title>$10 Watsons Discount Voucher</ion-card-title>
-        <ion-card-subtitle><ion-button size="small" class="bronzeReward" [(ngModel)]="rewardTierS" (click)="validateUserReward(rewardTierS, silverDeduct)">{{silverDeduct}} Steps</ion-button></ion-card-subtitle>
+        <ion-card-title></ion-card-title>
+        <ion-card-subtitle *ngFor="let items of rewardList">{{items.watsons}} </ion-card-subtitle>
+        <ion-card-subtitle>
+          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1);">{{bronzeArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="silverReward" (click)="validateUserReward(2);">{{silverArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="goldreward" (click)="validateUserReward(3);">{{goldArray[4]}} Steps</ion-button>
+        </ion-card-subtitle>
         </ion-card-header>
       </ion-header>
     </ion-card>
+
 
     <ion-title></ion-title>
     <ion-title></ion-title>
@@ -70,11 +79,18 @@
       <img src="/assets/spca.jpg" alt="">
       <ion-header>
         <ion-card-header>
-        <ion-card-title>$15 Donation to SPCA</ion-card-title>
-        <ion-card-subtitle><ion-button size="small" class="bronzeReward" [(ngModel)]="rewardTierG" (click)="validateUserReward(rewardTierG, goldDeduct)">{{goldDeduct}} Steps</ion-button></ion-card-subtitle>
+        <ion-card-title></ion-card-title>
+        <ion-card-subtitle *ngFor="let items of rewardList">{{items.spca}} </ion-card-subtitle>
+        <ion-card-subtitle>
+          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1);">{{bronzeArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="silverReward" (click)="validateUserReward(2);">{{silverArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="goldreward" (click)="validateUserReward(3);">{{goldArray[4]}} Steps</ion-button>
+        </ion-card-subtitle>
         </ion-card-header>
       </ion-header>
     </ion-card>
+
+
 
 
 
