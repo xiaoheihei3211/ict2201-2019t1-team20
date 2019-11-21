@@ -24,9 +24,10 @@
       <ion-label class="userTier" *ngFor="let item of reward" style="background:'{{userTier}}'"><h1>{{item.tier}} Member</h1></ion-label>
       </ion-item>
       <ion-label id="pointBG">
-        <p id="alignLeh"><ion-text *ngFor="let item of reward" id="currPoints1">{{item.steps}}</ion-text> steps to next tier
+        <p id="alignLeh"><ion-text *ngFor="let item of reward" id="currPoints1">{{item.next}}</ion-text> steps to next tier
           <br>
           <ion-button style="align:left" (click)="displayRedeemedReward()">Display Redeemed Rewards</ion-button>
+          
 
         </p>
 
@@ -45,9 +46,9 @@
         <ion-card-title></ion-card-title>
         <ion-card-subtitle *ngFor="let items of rewardList">{{items.grab}} </ion-card-subtitle>
         <ion-card-subtitle>
-          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1);">{{bronzeArray[4]}} Steps</ion-button>
-          <ion-button size="small" class="silverReward" (click)="validateUserReward(2);">{{silverArray[4]}} Steps</ion-button>
-          <ion-button size="small" class="goldreward" (click)="validateUserReward(3);">{{goldArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1,1);">{{bronzeArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="silverReward" (click)="validateUserReward(2,2);">{{silverArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="goldreward" (click)="validateUserReward(3,3);">{{goldArray[4]}} Steps</ion-button>
         </ion-card-subtitle>
         </ion-card-header>
       </ion-header>
@@ -63,9 +64,9 @@
         <ion-card-title></ion-card-title>
         <ion-card-subtitle *ngFor="let items of rewardList">{{items.watsons}} </ion-card-subtitle>
         <ion-card-subtitle>
-          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1);">{{bronzeArray[4]}} Steps</ion-button>
-          <ion-button size="small" class="silverReward" (click)="validateUserReward(2);">{{silverArray[4]}} Steps</ion-button>
-          <ion-button size="small" class="goldreward" (click)="validateUserReward(3);">{{goldArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1,4);">{{bronzeArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="silverReward" (click)="validateUserReward(2,5);">{{silverArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="goldreward" (click)="validateUserReward(3,6);">{{goldArray[4]}} Steps</ion-button>
         </ion-card-subtitle>
         </ion-card-header>
       </ion-header>
@@ -82,9 +83,9 @@
         <ion-card-title></ion-card-title>
         <ion-card-subtitle *ngFor="let items of rewardList">{{items.spca}} </ion-card-subtitle>
         <ion-card-subtitle>
-          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1);">{{bronzeArray[4]}} Steps</ion-button>
-          <ion-button size="small" class="silverReward" (click)="validateUserReward(2);">{{silverArray[4]}} Steps</ion-button>
-          <ion-button size="small" class="goldreward" (click)="validateUserReward(3);">{{goldArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="bronzeReward" (click)="validateUserReward(1,7);">{{bronzeArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="silverReward" (click)="validateUserReward(2,8);">{{silverArray[4]}} Steps</ion-button>
+          <ion-button size="small" class="goldreward" (click)="validateUserReward(3,9);">{{goldArray[4]}} Steps</ion-button>
         </ion-card-subtitle>
         </ion-card-header>
       </ion-header>
