@@ -11,9 +11,14 @@ export class CrudService {
       private firestore: AngularFirestore
     ) { }
 
-    add_Reward(reward){
-      return this.firestore.collection('Reward').add(reward);
+    add_Reward(reward, uid){
+      return this.firestore.collection('Reward').doc('/'+uid).collection('claimedReward').add(reward);
     }
+
+    read_subcollection(uid){
+      return this.firestore.collection('Reward').doc('/'+ uid).collection('claimedRewards').snapshotChanges();
+    }
+
 
     read_Reward(){
       return this.firestore.collection('Reward').snapshotChanges();
