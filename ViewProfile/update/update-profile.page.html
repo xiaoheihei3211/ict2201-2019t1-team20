@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/pages/profile"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding fullscreen>
+  <ion-list>
+
+    <ion-card-header>
+      <ion-card-title>
+       <ion-row>
+         <ion-col>
+           Edit Profile
+         </ion-col>
+        </ion-row>
+       </ion-card-title>
+    </ion-card-header>
+
+     <ion-card-header>
+       <ion-item>
+        <ion-label><strong>Email: </strong></ion-label>
+        <ion-input type="text" [(ngModel)]="email" placeholder="{{ email }}"></ion-input>
+      </ion-item>
+
+      <ion-item>
+       <ion-label><strong>Mobile: </strong></ion-label>
+       <ion-input type="text" [(ngModel)]="mobile" placeholder="{{ mobile }}"></ion-input>
+     </ion-item>
+
+    <ion-item>
+     <ion-label><strong>Commute Method: </strong></ion-label>
+       <ion-select [(ngModel)]="commute">
+           <ion-select-option value="Walking" checked="true">Walking</ion-select-option>
+           <ion-select-option value="Wheelchair">Wheelchair</ion-select-option>
+       </ion-select>
+   </ion-item>
+
+     </ion-card-header>
+
+    <ion-button id="button" fill="solid" expand="block" (click)="updateProfile()">Update Profile</ion-button>
+  </ion-list>
+</ion-content>
