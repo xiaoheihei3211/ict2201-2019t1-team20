@@ -1,0 +1,15 @@
+.map {
+  height: 70%;
+  width: 100%
+}
+ion-card {
+            max-height: 70px;
+            overflow: scroll;
+            position: absolute;
+            z-index: 1;
+            background-color: #FFFFFF !important;
+        }
+
+.scroll {
+            height: 100%
+        }
