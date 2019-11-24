@@ -1,7 +1,0 @@
-{
-  "name": "MappySteps(Login/Reg)",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
