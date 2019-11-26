@@ -7,13 +7,13 @@
 * **Boonjin123 - Tok Boon Jin**
 * **dotoxx - wei wei**
 * **vernonljw - Lim Jun Wei, Vernon**
-* **Matt4Realz - Matt**
+* **Matt4Realz - Tan Guan Hong**
 * **plh0219 - Peh Li Hao**
 
 
 
 ## Introduction
-MappySteps is a hybrid gamified application that supports both IOS and android devices that helps to enrich commute experience for users during their First Mile and Last Mile(FMLM) of their journey by providing multiple FMLM routes between 2 points on a map with an interesting reward system. The application allows for step-by-step navigation, ability to discover new routes and feedback about their experience in terms of safety, speed and enjoyment. Users who make of our application are able to earn points and use it to redeem attractive vouchers and rewards.
+MappySteps is a hybrid gamified application that supports both IOS and android devices that helps to enrich commute experience for users during their First Mile and Last Mile (FMLM) of their journey by providing multiple FMLM routes between 2 points on a map with an interesting reward system. The application allows for step-by-step navigation, ability to discover new routes and feedback about their experience in terms of safety, speed and enjoyment. Users who make of our application are able to earn points and use it to redeem attractive vouchers and rewards.
 
 ### Frameworks/Libraries
 - Ionic 5 – Cross platform Mobile Application 
