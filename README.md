@@ -2,15 +2,12 @@
 
 ## Authors
 
-* **IGN- realname**
-* **Xueraxy - Chua Wei Ye**
+**IGN- realname**
+**Xueraxy - Chua Wei Ye**
+**Boonjin123 - Tok Boon Jin**
+**dotoxx - wei wei**
+**vernonljw - Lim Jun Wei, Vernon**
+**Matt4Realz - Matt**
+**plh0219 - Peh Li Hao**
 
-* **Boonjin123 - Tok Boon Jin**
-
-* **dotoxx - wei wei**
-
-* **vernonljw - Lim Jun Wei, Vernon**
-
-* **Matt4Realz - Matt
-
-* **plh0219 - Peh Li Hao
+## Route
