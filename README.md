@@ -95,3 +95,4 @@ The Users will also be able to see the rewards that they have claimed as well. I
 Lastly, the User must also have sufficient steps in order to claim the rewards. If a User does not have enough points, the User will be prompted that they do not have enough points to claim the reward. 
 
 ### Youtube Video
+- https://youtu.be/gwRsuaoMqv4
