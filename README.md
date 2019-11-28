@@ -20,6 +20,9 @@ MappySteps is a hybrid gamified application that supports both IOS and android d
 - Angular Typescript – a superset of JavaScript which provides advanced feature.
 - Google map javascript API – Maps with customize attribute such map type, controls and others.
 
+### Component Diagram
+![Updated Component Diagram](https://github.com/dotox/ict2201-2019t1-team20/blob/development/ComponentDiagram.jpeg)
+
 ## How To Run
 ### Tabs in our Application
 - Route
@@ -93,9 +96,6 @@ Users at the higher tier will be able claim rewards at tiers below their own as 
 The Users will also be able to see the rewards that they have claimed as well. If the User does not have any rewards, the User will be prompted that there is no rewards to be displayed.
 
 Lastly, the User must also have sufficient steps in order to claim the rewards. If a User does not have enough points, the User will be prompted that they do not have enough points to claim the reward. 
-
-### Component Diagram
-![Updated Component Diagram](https://github.com/dotox/ict2201-2019t1-team20/blob/development/ComponentDiagram.jpeg)
 
 ### Youtube Video
 - https://youtu.be/hGdFzY1mDSc
